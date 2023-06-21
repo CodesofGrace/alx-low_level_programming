@@ -12,9 +12,9 @@ int print_sign(int n);
 
 int _abs(int);
 
-int _last_digit(int);
+int print_last_digit(int);
 
-void Jack_bauer(void);
+void jack_bauer(void);
 
 void time_table(void);
 
