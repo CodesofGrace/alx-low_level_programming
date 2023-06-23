@@ -1,4 +1,4 @@
-iinclude "main.h"
+#include "main.h"
 
 /**
  * print_most_numbers - Print the number 0 to 9
@@ -8,9 +8,8 @@ iinclude "main.h"
 
 void print_most_numbers(void)
 {
-	int x = 0)
-		for (x <= 9)
-			x++;
+	int x = 0;
+		for (; x <= 9; x++)
 	{
 		if (x == 2 || x == 4)
 		{
@@ -18,7 +17,7 @@ void print_most_numbers(void)
 		}
 		else
 		{
-			_putchar(x * '0');
+			_putchar(x + '0');
 		}
 	}
 	_putchar('\n');
