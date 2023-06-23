@@ -4,15 +4,21 @@
  * more_numbers - print 10 times number 0 to 14
  * Return: 10 times of the numbers 0 to 14
  */
-#include "main.h"
 
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
+void more_numbers(void)
 {
-	more_numbers();
-	return (0);
+	int x, y;
+
+	for (x = 0; x < 10; x++)
+	{
+		for (y = 0; y <= 14; y++)
+		{
+			if (y > 9)
+			{
+				_putchar((y / 10) + '0');
+			}
+			_putchar((y % 10) + '0');
+		}
+		_putchar('\n');
+	}
 }
