@@ -23,8 +23,13 @@ unsigned int _strspn(char *s, char *accept)
 			if (accept[n] == s[i])
 			{
 				value++;
-				check += 1;
+				check = 1;
 			}
+		}
+		if (check == 0)
+		{
+			value--;
+			check = 0;
 		}
 	}
 	return (0);
