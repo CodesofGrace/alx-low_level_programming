@@ -1,15 +1,16 @@
 #include "main.h"
 #include <stdio.h>
 
+void _puts(char *str);
 /**
- * main - Entry point of the program
- * _puts - Prints a string to stdio
- * main - Entry point of the program.
+ * main - Entry point of the code
+ * _puts - Prints a string to the standard output
+ * @str: The string
  * Return: Always 0 (Success)
- */
+*/
+
 int main(void)
 {
-    /* Function implementation */
 	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
 }
